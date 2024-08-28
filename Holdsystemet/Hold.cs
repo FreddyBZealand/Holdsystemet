@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Holdsystemet
 {
@@ -12,12 +15,13 @@ namespace Holdsystemet
     internal class Hold
     {
         static void Start()
-        { 
-           
+        {
+
             Dictionary<int, Studerende> My_dict1 = new Dictionary<int, Studerende>();
-            My_dict1.Add(4212, "student");
-            My_dict1.Add(2032, "student");
-            My_dict1.Add(3050, "student");
+            
+            //(4212, new Studerende();
+            //My_dict1(2032, "student");
+            //My_dict1(3050, "student");
         }
 
         #region Instance fields
@@ -89,10 +93,17 @@ namespace Holdsystemet
 
 
         }
-       
+        public void AdderStuderende(Studerende studerende)
+        {
+           
 
+        }
+        public void SletStuderende(int id)
+        {
+
+        }
 
         #endregion
-       
+
     }
 }

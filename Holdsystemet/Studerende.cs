@@ -9,7 +9,6 @@ namespace Holdsystemet
     public class Studerende
     {
        
-
            
 
         
@@ -84,7 +83,8 @@ namespace Holdsystemet
 
 
         }
-
+       
+                
        
         #endregion
 

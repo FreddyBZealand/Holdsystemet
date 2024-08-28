@@ -31,6 +31,14 @@ namespace Holdsystemet
             Console.WriteLine($"Student{andethold}, {andenstuderende}");
             Console.WriteLine($"student{tredjehold},{tredjestuderende}");
 
+           Console.WriteLine("AddStudent");
+
+            Dictionary<int, Studerende> My_dict1 = new Dictionary<int, Studerende>();
+            My_dict1.Add(4212, førstestuderende);
+            My_dict1.Add(2032, andenstuderende);
+            My_dict1.Add(3050, tredjestuderende);
+
+            Console.WriteLine($"AddStudent, {førstestuderende}");
 
 
 
