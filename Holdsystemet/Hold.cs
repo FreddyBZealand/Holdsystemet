@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,18 @@ using System.Threading.Tasks;
 
 namespace Holdsystemet
 {
+   
+
     internal class Hold
     {
+        static void Start()
+        { 
+           
+            Dictionary<int, Studerende> My_dict1 = new Dictionary<int, Studerende>();
+            My_dict1.Add(4212, "student");
+            My_dict1.Add(2032, "student");
+            My_dict1.Add(3050, "student");
+        }
 
         #region Instance fields
         public string _type;
@@ -32,39 +43,39 @@ namespace Holdsystemet
 
         #region Properties
         public string Type
-        { 
-            get { return _type; } 
+        {
+            get { return _type; }
             set { _type = value; }
-        
-        
+
+
         }
 
         public string Lokation
-        {  
-            get { return _lokation; } 
+        {
+            get { return _lokation; }
             set { _lokation = value; }
-        
+
         }
 
         public string Betegnelse
-        { 
-            get { return _betegnelse;  } 
+        {
+            get { return _betegnelse; }
             set { _betegnelse = value; }
-        
+
         }
 
         public int Optagelsesår
         {
             get { return _optagelsesår; }
-            set {  _optagelsesår = value;}
+            set { _optagelsesår = value; }
 
-        
+
         }
 
         public bool Vinteroptag
-        { 
-        get { return _vinteroptag; }
-            set { _vinteroptag = value;}
+        {
+            get { return _vinteroptag; }
+
         }
 
 
@@ -78,9 +89,10 @@ namespace Holdsystemet
 
 
         }
-        
+       
+
+
         #endregion
-
-
+       
     }
 }

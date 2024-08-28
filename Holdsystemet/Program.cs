@@ -17,6 +17,23 @@ namespace Holdsystemet
             Console.WriteLine(førstestuderende);
             Console.WriteLine(andenstuderende);
             Console.WriteLine(tredjestuderende);
+
+            Hold førstehold = new Hold("Datamatiker", "Roskilde", "A", 2023, true);
+            Hold andethold = new Hold("Økonomi", "Næstved", "B", 2023, false);
+            Hold tredjehold = new Hold("Musik", "Holbæk", "C", 2023, true);
+
+            Console.WriteLine(førstehold);
+            Console.WriteLine(andethold);
+            Console.WriteLine(tredjehold);
+
+
+            Console.WriteLine($"student{førstehold}, {førstestuderende}");
+            Console.WriteLine($"Student{andethold}, {andenstuderende}");
+            Console.WriteLine($"student{tredjehold},{tredjestuderende}");
+
+
+
+
         }
     }
 }
